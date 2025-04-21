@@ -5,10 +5,10 @@ body {
   color: #333;
 }
 header {
-  background-color: #0066cc;
+  linear-gradient(90deg, #007a33, #005baa, #ffcc00);
   color: white;
+  padding: 1rem;
   text-align: center;
-  padding: 1rem 1rem;
 }
 .logo {
   width: 300px;
