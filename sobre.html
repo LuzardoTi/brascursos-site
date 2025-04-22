@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre - BrasCursos</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .sobre-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .sobre-texto {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+    }
+
+    .sobre-imagem {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .sobre-imagem img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,11 +45,27 @@
       <a href="contato.html">Contato</a>
     </nav>
   </header>
+
   <main>
-    <section>
-      <p>A BrasCursos é especialista em soluções para Educação a Distância, com foco na transformação digital.</p>
+    <section class="sobre-container">
+      <div class="sobre-texto">
+        <h2>Transformando o Ensino com Tecnologia</h2>
+        <p>
+          A <strong>BrasCursos</strong> nasceu em <strong>2023</strong>, no coração de <strong>Roraima</strong>, com um propósito claro: transformar a maneira como a educação é entregue no Brasil. Especializada em soluções completas para <strong>Educação a Distância (EAD)</strong>, a empresa oferece suporte integral para quem deseja lançar sua própria plataforma de ensino — mesmo sem experiência técnica.
+        </p>
+        <p>
+          Desde a criação do ambiente digital até a produção de conteúdo, passando por edição de vídeo, marketing e estratégias de vendas, a BrasCursos cuida de toda a jornada de transformação digital. Nosso compromisso é permitir que você foque no que realmente importa: o conteúdo. Deixe a logística com a gente.
+        </p>
+        <p>
+          Hoje, a BrasCursos é referência em oferecer soluções acessíveis, modernas e personalizadas para professores, instituições e empresas que desejam empreender no ensino online com qualidade, autonomia e resultado.
+        </p>
+      </div>
+      <div class="sobre-imagem">
+        <img src="e89c9df531a8d9860762851450d07fda0631300d.jpg" alt="Reunião online com equipe EAD">
+      </div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 BrasCursos. Todos os direitos reservados.</p>
   </footer>
