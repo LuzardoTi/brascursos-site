@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Serviços - BrasCursos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-5L7HoSHHjS0bYo5o+9jFbM0rYXY5PbFz9WtbFBCOn3UK/0aQjq9zDdAB4sZP0jKaqACF4EP/ZG35MnX/yzKeoA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
@@ -12,80 +12,129 @@
       margin: 0;
       background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
       background: linear-gradient(90deg, #007a33, #005baa, #ffcc00);
       color: white;
       text-align: center;
       padding: 1.5rem 1rem;
     }
+
     .logo {
-      width: 280px;
+      width: 240px;
       max-width: 90%;
       margin-bottom: 0.5rem;
     }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-top: 0.5rem;
+    }
+
     nav {
       margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
     }
+
     nav a {
-      color: #001f3f; /* Azul escuro */
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
+      color: #001f3f;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05rem;
+      padding: 0.3rem 0.6rem;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: #007a33;
+    }
+
     main {
-      padding: 2rem;
+      padding: 2rem 1rem;
       max-width: 1000px;
       margin: 0 auto;
     }
+
     section {
       margin-bottom: 2rem;
     }
+
     h2 {
       color: #005baa;
-      margin-top: 2rem;
       font-size: 1.6rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      margin-top: 2rem;
     }
+
     h2 i {
       color: #007a33;
+      font-size: 1.2rem;
     }
+
     h3 {
       color: #007a33;
       margin-top: 1.5rem;
+      font-size: 1.2rem;
     }
-    p, li {
-      line-height: 1.6;
-    }
+
     ul {
       padding-left: 1.5rem;
+      margin: 1rem 0;
     }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
     footer {
       background-color: #eee;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+      margin-top: 3rem;
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 768px) {
       header h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
       nav a {
-        display: block;
-        margin: 0.5rem 0;
+        font-size: 1rem;
+        margin: 0.3rem 0;
       }
+
       h2 {
         font-size: 1.3rem;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      main {
+        padding: 1.5rem 1rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="Bras - Copia.png" alt="Logo BrasCursos" class="logo">
+    <img src="Bras - Copia.png" alt="Logo BrasCursos" class="logo" />
     <h1>Nossos Serviços</h1>
     <nav>
       <a href="index.html">Início</a>
@@ -107,6 +156,7 @@
       <p><strong>Objetivo:</strong> Compreender o cenário atual da sua empresa.</p>
       <p><strong>O que envolve:</strong> Análise de cursos, metodologia, plataforma, marketing, suporte ao aluno, taxas de conversão e evasão.</p>
       <p><strong>Ferramentas:</strong> Entrevistas, análise de dados e auditorias.</p>
+
       <h3>📌 2. Definição de Estratégias</h3>
       <ul>
         <li>Melhoria pedagógica dos cursos</li>
@@ -116,12 +166,14 @@
         <li>Criação de novos produtos educacionais</li>
         <li>Treinamento de equipe</li>
       </ul>
+
       <h3>📌 3. Execução e Acompanhamento</h3>
       <ul>
         <li>Reuniões semanais ou quinzenais</li>
         <li>Testes A/B em estratégias de venda</li>
         <li>Avaliação de desempenho de alunos e tutores</li>
       </ul>
+
       <h3>📌 4. Resultados e Otimizações</h3>
       <p>Medição de resultados com ajustes contínuos para garantir matrículas, retenção, engajamento e faturamento.</p>
     </section>
