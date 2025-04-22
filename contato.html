@@ -5,6 +5,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - BrasCursos</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      max-width: 240px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      margin: 0.5rem 0 1rem;
+      color: #003366;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #007a33;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contato-card {
+      max-width: 600px;
+      width: 100%;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .contato-card h2 {
+      color: #005baa;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .contato-card p {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contato-info {
+      text-align: left;
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+
+    .contato-info a {
+      color: #005baa;
+      text-decoration: none;
+    }
+
+    .contato-info a:hover {
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      margin-top: 2.5rem;
+      background: linear-gradient(90deg, #007a33, #005baa, #ffcc00);
+      padding: 1rem 2rem;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-align: center;
+      display: inline-block;
+      transition: opacity 0.3s ease;
+    }
+
+    .cta-button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.3rem;
+      }
+
+      .contato-card h2 {
+        font-size: 1.4rem;
+      }
+
+      .contato-card p,
+      .contato-info {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,21 +160,19 @@
     </nav>
   </header>
 
-  <!-- Seção de contato personalizada -->
-  <main style="padding: 3rem 1rem; text-align: center;">
-    <section style="max-width: 600px; margin: 0 auto; background: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-      <h2 style="color: #005baa; margin-bottom: 1rem;">Entre em contato com a gente</h2>
-      <p style="margin-bottom: 1rem;">Estamos prontos para ajudar você a lançar ou melhorar sua plataforma EAD!</p>
-      <div style="text-align: left; font-size: 1.1rem; line-height: 2;">
+  <main>
+    <section class="contato-card">
+      <h2>Entre em contato com a gente</h2>
+      <p>Estamos prontos para ajudar você a lançar ou melhorar sua plataforma EAD!</p>
+      <div class="contato-info">
         <p>📧 <strong>Email:</strong> <a href="mailto:contato@brascursos.com">contato@brascursos.com</a></p>
         <p>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5595991560308" target="_blank">(95) 99156-0308</a></p>
         <p>📍 <strong>Endereço:</strong> Travessa C46, 179A - Boa Vista/RR</p>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section style="margin-top: 3rem;">
-      <a href="mailto:contato@brascursos.com" style="background: linear-gradient(90deg, #007a33, #005baa, #ffcc00); padding: 1rem 2rem; color: white; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">Quero falar com um especialista</a>
+    <section>
+      <a href="mailto:contato@brascursos.com" class="cta-button">Quero falar com um especialista</a>
     </section>
   </main>
 
