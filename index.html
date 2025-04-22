@@ -1,14 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BrasCursos - Início</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: white;
+      text-align: center;
+      padding: 1rem 1rem 0.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      max-width: 260px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      margin: 0.5rem 0 1rem;
+      color: #003366;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #007a33;
+    }
+
+    section.banner {
+      background: linear-gradient(90deg, #007a33, #005baa, #ffcc00);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    section.banner h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    section.banner p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .benefits {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 2rem;
+      max-width: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .benefits li {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .banner a.cta {
+      background-color: white;
+      color: #004a99;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .banner a.cta:hover {
+      background-color: #004a99;
+      color: white;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      section.banner h1 {
+        font-size: 1.7rem;
+      }
+
+      section.banner p {
+        font-size: 1rem;
+      }
+
+      .benefits {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .benefits li {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      header h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="Bras - Copia.png" alt="Logo BrasCursos" class="logo">
+    <img src="Bras - Copia.png" alt="Logo BrasCursos" class="logo" />
     <h1>Bem-vindo à BrasCursos</h1>
     <nav>
       <a href="index.html">Início</a>
@@ -18,24 +156,22 @@
     </nav>
   </header>
 
-  <!-- 👇 Banner chamativo aqui -->
-  <section style="background: linear-gradient(90deg, #007a33, #005baa, #ffcc00); color: white; padding: 3rem 1rem; text-align: center;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Lance sua Plataforma EAD sem complicações</h1>
-    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem;">Nós cuidamos de tudo — você só grava o conteúdo. Plataformas prontas, vídeos editados e marketing rodando. Tudo para você vender e ver o dinheiro cair na conta.</p>
-    <ul style="list-style: none; padding: 0; margin: 0 auto 2rem; max-width: 600px; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-      <li style="background: rgba(255, 255, 255, 0.1); padding: 1rem 1.5rem; border-radius: 8px;">📦 Plataforma pronta e personalizada</li>
-      <li style="background: rgba(255, 255, 255, 0.1); padding: 1rem 1.5rem; border-radius: 8px;">🎬 Edição e publicação de vídeos</li>
-      <li style="background: rgba(255, 255, 255, 0.1); padding: 1rem 1.5rem; border-radius: 8px;">🚀 Estratégias de marketing integradas</li>
-      <li style="background: rgba(255, 255, 255, 0.1); padding: 1rem 1.5rem; border-radius: 8px;">💸 Vendas automatizadas direto na sua conta</li>
+  <section class="banner">
+    <h1>Lance sua Plataforma EAD sem complicações</h1>
+    <p>Nós cuidamos de tudo — você só grava o conteúdo. Plataformas prontas, vídeos editados e marketing rodando. Tudo para você vender e ver o dinheiro cair na conta.</p>
+    <ul class="benefits">
+      <li>📦 Plataforma pronta e personalizada</li>
+      <li>🎬 Edição e publicação de vídeos</li>
+      <li>🚀 Estratégias de marketing integradas</li>
+      <li>💸 Vendas automatizadas direto na sua conta</li>
     </ul>
-    <a href="contato.html" style="background-color: white; color: #004a99; padding: 0.8rem 2rem; border-radius: 50px; font-weight: bold; text-decoration: none; font-size: 1rem;">Quero Começar Agora</a>
+    <a href="contato.html" class="cta">Quero Começar Agora</a>
   </section>
-  <!-- 👆 Fim do banner -->
 
   <main>
-    <section>
-    </section>
+    <!-- Conteúdo adicional pode ser adicionado aqui -->
   </main>
+
   <footer>
     <p>&copy; 2025 BrasCursos. Todos os direitos reservados.</p>
   </footer>
